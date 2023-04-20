@@ -7,13 +7,17 @@ public class Medicamentos {
     private String frequencia;
 
 
-    public Medicamentos(String nome, String dosagem, String frequencia, int hora, int minuto) {
+    public Medicamentos(String nome, String dosagem, String frequencia) {
         this.nome = nome;
         this.dosagem = dosagem;
         this.frequencia = frequencia;
     }
+    public Medicamentos(String nome, String frequencia) {
+        this.nome = nome;
+        this.frequencia = frequencia;
 
-    public String getNome() {
+    }
+        public String getNome() {
         return nome;
     }
 

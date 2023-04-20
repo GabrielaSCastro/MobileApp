@@ -1,21 +1,20 @@
 package br.ucsal.mobile.medicamentos;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import java.util.List;
 
+//classe Adapter do RecyclerView da tela principal
 public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
-    private List< Medicamentos> listaMedicamentos;
+    private List<Medicamentos> listaMedicamentos;
     public Adapter(List<Medicamentos> lista){
         this.listaMedicamentos= lista;
 
@@ -28,16 +27,15 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
         return new MyViewHolder(itemLista);
     }
-
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder,  int position) {
         Medicamentos medicamento = listaMedicamentos.get(position);
         holder.nomeMedicamento.setText(medicamento.getNome());
-
     }
 
     @Override
     public int getItemCount() {
+
         return listaMedicamentos.size();
     }
 

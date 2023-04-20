@@ -12,6 +12,14 @@
         android:theme="@style/Theme.Medicamentos"
         tools:targetApi="31">
         <activity
+            android:name=".AddMedicamentoActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".MostrarMedicamentoActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
