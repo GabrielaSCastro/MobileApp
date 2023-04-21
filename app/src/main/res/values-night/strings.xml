@@ -1,8 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Medicamentos</string>
     <string name="insira_nome_do_medicamento">Insira nome do medicamento</string>
     <string name="nome">Nome</string>
-    <string name="frequ_ncia">Frequência</string>
     <string name="dosagem">Dosagem</string>
     <string name="hor_rio">Horário</string>
     <string name="editar">Editar</string>
