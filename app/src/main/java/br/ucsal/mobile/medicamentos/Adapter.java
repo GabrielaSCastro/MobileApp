@@ -42,16 +42,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
         TextView nomeMedicamento;
-        TextView tomadosQntd;
-        FloatingActionButton excluirMedicamento;
         CheckBox checkTomados;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             nomeMedicamento = itemView.findViewById(R.id.Main_NomeRemedio);
-            tomadosQntd = itemView.findViewById(R.id.Main_tomados);
-            excluirMedicamento = itemView.findViewById(R.id.Main_excluir);
             checkTomados = itemView.findViewById(R.id.Main_Checkbox);
         }
     }

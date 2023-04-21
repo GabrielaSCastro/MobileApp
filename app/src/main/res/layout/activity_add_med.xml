@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
         android:layout_marginBottom="10dp"
-        android:text="nome do remedio"
+        android:text="  "
         app:layout_constraintBottom_toTopOf="@+id/add_nome_remedio"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -33,7 +33,7 @@
         android:layout_marginBottom="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="ex:Tylenol"
+        android:text=" "
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -55,7 +55,7 @@
         android:layout_marginBottom="5dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="ex:3 vezes ao dia"
+        android:text=" "
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -77,7 +77,7 @@
         android:layout_marginBottom="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="ex:2 comprimidos"
+        android:text="  "
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -91,7 +91,7 @@
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <Button
-        android:id="@+id/add_button_proximo"
+        android:id="@+id/add_button_salvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
@@ -115,8 +115,8 @@
         android:layout_marginBottom="300dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="hora"
+        android:text="  "
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="10dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

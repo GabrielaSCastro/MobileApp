@@ -94,4 +94,21 @@ public class DBHelper extends SQLiteOpenHelper {
         }
         return medicamentos;
     }
+    public ArrayList<String> ViewMedicamento(String nome){
+        ArrayList<String> medicamento = new ArrayList<String>();
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("Select * from Medicamentos where nome = ?", new String[] {nome});
+        String nomeView="", frequenciaView="", dosagemView="", horarioView="";
+        while (cursor.moveToNext()){
+             nomeView= cursor.getString(0).toString();
+             frequenciaView = cursor.getString(1).toString();
+             dosagemView = cursor.getString(2).toString();
+             horarioView = cursor.getString(3).toString();
+        }
+        medicamento.add(nomeView);
+        medicamento.add(frequenciaView);
+        medicamento.add(dosagemView);
+        medicamento.add(horarioView);
+        return medicamento;
+    }
 }

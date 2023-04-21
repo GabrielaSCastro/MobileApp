@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private Button add;
+    private Button add, editar;
     private DBHelper DB;
     private ArrayList<Medicamentos> medicamentos;
     @Override
@@ -39,5 +39,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        editar = findViewById(R.id.main_button_editar);
+        editar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,RecuperarRemedioActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
     }

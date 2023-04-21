@@ -16,7 +16,7 @@
             android:exported="true">
         </activity>
         <activity
-            android:name=".MostrarMedicamentoActivity"
+            android:name=".RecuperarRemedioActivity"
             android:exported="true">
         </activity>
         <activity

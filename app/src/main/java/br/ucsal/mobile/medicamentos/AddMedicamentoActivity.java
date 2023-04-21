@@ -30,7 +30,7 @@ public class AddMedicamentoActivity extends AppCompatActivity {
         frequenciaTextView = findViewById(R.id.add_frequencia);
         horarioTextView=findViewById(R.id.add_horario);
         voltar = findViewById(R.id.add_button_voltar);
-        adicionar = findViewById(R.id.add_button_proximo);
+        adicionar = findViewById(R.id.add_button_salvar);
 
        //volta a tela inicial
         voltar.setOnClickListener(new View.OnClickListener() {
