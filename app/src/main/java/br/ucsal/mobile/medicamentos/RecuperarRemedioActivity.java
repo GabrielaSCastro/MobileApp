@@ -59,7 +59,7 @@ public class RecuperarRemedioActivity extends AppCompatActivity {
         editar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RecuperarRemedioActivity.this,MainActivity.class);
+                Intent intent = new Intent(RecuperarRemedioActivity.this,EditarMedicamento.class);
                 intent.putExtra("Nome do remedio", String.valueOf(nomeInserido.getText()));
                 startActivity(intent);
             }
